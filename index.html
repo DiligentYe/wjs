@@ -1,0 +1,919 @@
+<!-- ceshi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 设置字符集 -->
+    <meta charset="UTF-8">
+    <!--  设置浏览器兼容版本 -->
+    <meta http-equiv="X-UA-Compatibe" content="IE=edge">
+    <!-- 设置视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>index</title>
+    <!-- 设置小图标 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 引入bootstrap的CSS文件 -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- 兼容处理 -->
+    <!-- [if lt IE9]>
+        <script src="lib/html5shiv/html5shiv.min.js"></script>
+        <script src="lib/respond/respond.min.js"></script>
+    <!-->
+    <!-- 引入自己的CSS文件 -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- ＃头部部分 -->
+    <header id="header">
+        <!-- hidden-xx 设置在哪个屏幕规则下隐藏 -->
+        <div class="topbar hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <a href="#" class="mobile-link">
+                            <i class="icon-mobilephone"></i>
+                            <span>手机微金所</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <img src="img/c_06.jpg" alt="扫一扫">
+                        </a>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <i class="icon-telephone"></i>
+                        <span> 4006-89-4006（服务时间：9:00-21:00）</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="#">常见问题</a>
+                        <a href="#">财富登录</a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="#" class="btn btn-register btn-sm">免费注册</a>&nbsp;
+                        <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#login_form">登陆</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-mynav navbar-static-top" role="navigation" data-spy="affix" data-offset-top="41" data-offset-bottom="200">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- 汉堡菜单 sr-only类 只给屏幕阅读器查看 用户无法查看 -->
+                    <!-- icon-bar类 供用户查看 -->
+                    <!-- data-toggle 是否展开 -->
+                    <!-- data-target 制定控制的对象id -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list">
+                        <span class="sr-only">菜单切换（供屏幕查看）</span>
+                        <!-- 汉堡菜单的三个横线 -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- 商标 -->
+                    <div class="navbar-brand">
+                        <i class="icon-icon"></i>
+                        <i class="icon-logo"></i>
+                    </div>
+                </div>
+                <!-- id对应按钮的data-target 由上面button控制显示和隐藏  -->
+                <div class="collapse navbar-collapse" id="nav-list">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">我要投资</a></li>
+                        <li><a href="#">我要借款</a></li>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">新手专区</a></li>
+                        <li><a href="#">最新动态</a></li>
+                        <li><a href="#">微论坛</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ／＃头部部分 -->
+    <!-- ＃广告部分 -->
+    <section id="main_ad" class="carousel
+ slide" data-ride="carousel">
+        <!-- 指示器 涂上的小圆点 -->
+        <ol class="carousel-indicators">
+            <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+            <li data-target="#main_ad" data-slide-to="1"></li>
+            <li data-target="#main_ad" data-slide-to="2"></li>
+            <li data-target="#main_ad" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播项 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" data-image-lg="img/slide_01_2000x410.jpg" data-image-xs="img/slide_01_640x340.jpg" style="">
+            </div>
+            <div class="item" data-image-lg="img/slide_02_2000x410.jpg" data-image-xs="img/slide_02_640x340.jpg" style="">
+            </div>
+            <div class="item" data-image-lg="img/slide_03_2000x410.jpg" data-image-xs="img/slide_03_640x340.jpg" style="">
+            </div>
+            <div class="item" data-image-lg="img/slide_04_2000x410.jpg" data-image-xs="img/slide_04_640x340.jpg" style="">
+            </div>
+        </div>
+        <!-- 控制按钮 控制左右移动图片 href设置锚点 -->
+        <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+    <!-- ／＃广告部分 -->
+    <!-- ＃特色部分 -->
+    <section id="special">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="icon-uniE907"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">支付交易保证</h4>
+                                <p>银联支付全程保障资金安全</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  hidden-xs">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="icon-uniE903"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">平台财产安全</h4>
+                                <p>由PICC保驾护航</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  hidden-xs">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="icon-uniE901"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">交易安全</h4>
+                                <p>由中国人寿财险对借款人承保</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  hidden-xs">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="icon-uniE900"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">安全保障</h4>
+                                <p>独创八层安全保障机制</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  hidden-xs">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="icon-uniE904"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">筛选优质资产</h4>
+                                <p>对接上海资信征信系统</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  hidden-xs">
+                    <a href="#">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="icon-uniE902"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">联合信息发布</h4>
+                                <p>通过路透社共同发布利率指数报告</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ／＃特色部分 -->
+    <!-- ＃预约部分 -->
+    <section id="ljyy">
+        <div class="container">
+            <p class="pull-left"><i class="icon-uniE906"></i>现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <a href="#">立即预约</a></p>
+            <p class="pull-right hidden-xs hidden-sm"><a href="#"><i class="icon-uniE905"></i> 微金所企业宣传片</a></p>
+        </div>
+    </section>
+    <!-- ／＃预约部分 -->
+    <!-- ＃产品部分 -->
+    <section id="products">
+        <div class="container">
+            <!-- Tab 选项栏 -->
+            <!-- 
+                在ul外面包裹一个div，设置div的宽度等于所有li的宽度和，其中包括一些padding和border
+            -->
+            <div class="ul-wrapper">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#category_00" role="tab" data-toggle="tab">特别推荐</a></li>
+                    <li role="presentation"><a href="#category_01" role="tab" data-toggle="tab">微投资</a></li>
+                    <li role="presentation"><a href="#category_02" role="tab" data-toggle="tab">微小宝</a></li>
+                    <li role="presentation"><a href="#category_03" role="tab" data-toggle="tab">微消费</a></li>
+                    <li role="presentation"><a href="#category_04" role="tab" data-toggle="tab">微增利</a></li>
+                    <li role="presentation"><a href="#category_05" role="tab" data-toggle="tab">微金宝</a></li>
+                    <li role="presentation"><a href="#category_06" role="tab" data-toggle="tab">微转让</a></li>
+                    <li class="pull-right hidden-xs hidden-sm"><a href="#">更多</a></li>
+                </ul>
+            </div>
+            <!-- Tab 选项面板-->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="category_00">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs active">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs">
+                                <div class="panel-heading">
+                                    <p class="tooltips"><a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a><a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实地认证" href="#">实</a></p>
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable panel-state1">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable panel-state2">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body ">
+                                    <h4>新手体验标0650期</h4>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable panel-state3">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable disable panel-state4">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="category_01">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs active">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs">
+                                <div class="panel-heading">
+                                    <p class="tooltips"><a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a><a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实地认证" href="#">实</a></p>
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>新手体验标0650期</h4>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="category_02">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs active">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs">
+                                <div class="panel-heading">
+                                    <p class="tooltips"><a class="badge badge-one" data-toggle="tooltip" data-placement="top" title="北京市" href="#">京</a><a class="badge badge-two" data-toggle="tooltip" data-placement="top" title="实地认证" href="#">实</a></p>
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>新手体验标0650期</h4>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="panel panel-wjs disable">
+                                <div class="panel-heading">
+                                    <p><strong>8</strong><sub>%</sub></br><span>年利率</span></p>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起投金额(元)</p>
+                                            <p><strong>0.01</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="category_03">...</div>
+                <div role="tabpanel" class="tab-pane fade" id="category_04">...</div>
+                <div role="tabpanel" class="tab-pane fade" id="category_05">...</div>
+                <div role="tabpanel" class="tab-pane fade" id="category_06">...</div>
+            </div>
+        </div>
+    </section>
+    <!-- ／＃产品部分 -->
+    <!-- ＃新闻部分 -->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                    <div class="news-title">
+                        全部新闻
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                        <li role="presentation" class="active"><a href="#news-01" role="tab" data-toggle="tab" data-title="全部新聞"><i class="icon-news01"></i></a></li>
+                        <li role="presentation"><a href="#news-02" role="tab" data-toggle="tab" data-title="媒體報道"><i class="icon-news02"></i></a></li>
+                        <li role="presentation"><a href="#news-03" role="tab" data-toggle="tab" data-title="微金所頭條"><i class="icon-news03"></i></a></li>
+                        <li role="presentation"><a href="#news-04" role="tab" data-toggle="tab" data-title="行業資訊"><i class="icon-news04"></i></a></li>
+                    </ul>
+                    <i class="line-dashed hidden-xs hidden-sm"></i>
+                </div>
+                <div class="col-md-6">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="news-01">
+                            <ul>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news-02">
+                            <ul>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news-03">
+                            <ul>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="news-04">
+                            <ul>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                                <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ／＃新闻部分 -->
+    <!-- ＃合约商部分 -->
+    <section id="hzhb" class="hidden-sm hidden-xs">
+        <div class="container text-center">
+            <h3>合作伙伴</h3>
+            <ul class="center-block">
+                <li><a href="#"><i class="icon-uniE930"></i></a></li>
+                <li><a href="#"><i class="icon-uniE92F"></i></a></li>
+                <li><a href="#"><i class="icon-uniE92E"></i></a></li>
+                <li><a href="#"><i class="icon-uniE92A"></i></a></li>
+                <li><a href="#"><i class="icon-uniE929"></i></a></li>
+                <li><a href="#"><i class="icon-uniE931"></i></a></li>
+                <li><a href="#"><i class="icon-uniE92C"></i></a></li>
+                <li><a href="#"><i class="icon-uniE92B"></i></a></li>
+                <li><a href="#"><i class="icon-uniE92D"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- ／＃合约商部分 -->
+    <!-- 模态框 -->
+    <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="login_form_title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="login_form_title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- form表单 -->
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ／＃模态框 -->
+    <!-- 引入jQuery包 -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!-- 引入bootstrap的js包 -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入自己的js包 -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
